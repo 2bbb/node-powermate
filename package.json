@@ -20,7 +20,7 @@
      "powermate"
   ],
   "dependencies": {
-    "node-hid": "1.1.0"
+    "node-hid": "1.2.0"
   },
   "devDependencies": {
     "jshint": "latest",
