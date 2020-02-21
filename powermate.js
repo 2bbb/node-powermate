@@ -195,7 +195,7 @@ PowerMate.prototype._parseRead = function(error, data) {
     }
   } else if (data) {
     var buttonState = data[0];
-    if (buttonState !== this._buttonState) {
+    if (buttonState !== this._buttonState || !data[1]) {
       this._buttonState = buttonState;
 
       this.emit(buttonState ? 'buttonDown' : 'buttonUp');
